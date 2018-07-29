@@ -24,7 +24,9 @@ public class InsertController {
 	public InsertResponse getValue(@RequestParam String username) {
 		InsertResponse response = new InsertResponse();
 		response = insertService.insert(username);
-		System.out.println(response.getStatusCode()+" "+response.getStatusMessage());
+	System.out.println(response.getStatusCode()+" "+response.getStatusMessage());
 		return response;
 	}
+	
+	
 }
