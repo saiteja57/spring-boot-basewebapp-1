@@ -2,6 +2,7 @@ package com.example.demo.service;
 
 import org.springframework.stereotype.Service;
 
+import com.example.demo.model.ModifyRequest;
 import com.example.demo.model.UpdateResponse;
 
 @Service
@@ -17,4 +18,10 @@ public class TransactionServiceImpl implements TransactionService {
 		return response;
 	}
 
+	@Override
+	public int modify(ModifyRequest request) {
+		return 1;
+	}
+	
+	
 }
